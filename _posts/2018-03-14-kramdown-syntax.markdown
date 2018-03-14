@@ -4,7 +4,7 @@ title: "kramdown 사용법"
 img: postimg/programming.jpg
 date: 2018-03-14 15:54:27 +0900
 description: Jekyll 에서 사용하는 kramdown 문법 에 대해 알아본다.
-categories: Jekyll, Kramdown, Markdown
+categories: Study Markdown
 ---
 # kramdown 문법
 
@@ -65,10 +65,10 @@ Git blog를 사용하려고 보니 kramdown 라는 마크다운 문법을 사용
 
 ### 이미지
 
-![이미지이름](/assets/img/SHGroup.png)
+![이미지이름](/img/SHGroup-512.png)
 
 ```
-![이미지이름](/assets/img/SHGroup.png)
+![이미지이름](/img/SHGroup-512.png)
 ```
 
 ### 인라인 코드
