@@ -4,7 +4,7 @@ title: "Codegate 2018 Quals RedVelvet"
 img: codegate2018/RedVelvet/postimg.png
 date: 2018-03-14 19:14:30 +0900
 description: Codegate 2018 Quals Reversing RedVelvet Write-up
-categories: Codegate Reversing
+categories: Codegate Reversing Writeup
 ---
 # Codegate 2018 Prequal Reversing RedVelvet
 
@@ -18,11 +18,11 @@ Solve 28
 
 [Download](https://s3.ap-northeast-2.amazonaws.com/codegate2018/afbea1c0a463d63cd6f00389a3b2fe88)
 
-> 실제 다운로드는 [이곳](https://github.com/sunghun7511/Writeup/blob/master/ctf/codegate/2018-Prequal/Reversing/RedVelvet/afbea1c0a463d63cd6f00389a3b2fe88)에서 해주세요!
+> 다운로드가 안된다면 [이곳](https://github.com/sunghun7511/Writeup/blob/master/ctf/codegate/2018-Prequal/Reversing/RedVelvet/afbea1c0a463d63cd6f00389a3b2fe88)에서 해주세요!
+
+(`Junior` 으로 참가하여서 일반부와는 문제의 점수가 다를 수 있습니다.)
 
 ## 풀이
-
-### 분석
 
 이 바이너리를 가상머신에서 실행시키면 입력을 한 번 받고 바로 종료한다.
 
@@ -30,7 +30,7 @@ Solve 28
 
 ![source](https://github.com/sunghun7511/Writeup/raw/master/ctf/codegate/2018-Prequal/Reversing/RedVelvet/source.PNG)
 
-`27` 글자만큼의 입력을 받고, `func1` ~ `func15` 까지 거친 후 입력값을 `SHA256` 해시를 한 이후, 플래그의 해시로 추정되는 `s2` 와 같은지 검사한다.
+27 글자만큼의 입력을 받고, `func1` ~ `func15` 까지 거친 후 입력값을 `SHA256` 해시를 한 이후, 플래그의 해시로 추정되는 `s2` 와 같은지 검사한다.
 
 각 `func` 함수들 안에는 만약 플래그의 조건이 맞지 않다면 종료하는 구문이 있었기에, `angr` 를 사용하였다.
 
