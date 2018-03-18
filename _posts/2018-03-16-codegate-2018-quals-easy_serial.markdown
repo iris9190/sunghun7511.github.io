@@ -47,7 +47,7 @@ Solve 2
 
 > 만약 고쳐진 하스켈 디컴파일러를 사용하고 싶으시다면 [이곳](https://github.com/sunghun7511/hsdecomp)에 올려놓았다.
 
-이게 하스켈 디컴파일러의 출력입니다.
+이게 하스켈 디컴파일러의 출력이다.
 
 ```haskell
 Main_main_closure=>> $fMonadIO
